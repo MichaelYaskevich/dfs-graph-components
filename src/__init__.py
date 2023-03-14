@@ -1,1 +1,1 @@
-from .task1 import find_components, read
+from .dfs import find_components, read

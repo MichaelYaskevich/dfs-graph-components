@@ -103,7 +103,7 @@ def dfs(graph: Graph, components):
 
 
 def write(components):
-    with open("out.txt", 'w') as f:
+    with open(OUTPUT, 'w') as f:
         f.write(str(len(components)) + '\n')
         for com in components:
             for v in com:
@@ -113,4 +113,5 @@ def write(components):
 
 if __name__ == '__main__':
     INPUT = sys.argv[1]
+    OUTPUT = sys.argv[2]
     write(find_components(read(INPUT)))
